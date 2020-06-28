@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+.shadow {
+  position: relative;
+  width: 23rem;
+  height: 5rem;
+}
+.shadow .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(#000, #262626);
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.shadow .content:hover {
+  background: linear-gradient(#262626, #000);
+  cursor: pointer;
+}
+.shadow .content:active {
+  background: #262626;
+}
+.shadow:before, .shadow:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 500%;
+  z-index: -1;
+  animation: animate 30s ease infinite;
+}
+.shadow:after {
+  filter: blur(15px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  padding-top: 3rem;
+}
+
+.shadow .content {
+  height: 80px;
+}
+
+.bold-text {
+  color: white;
+  text-shadow: 0 0 1px grey;
+  font-size: 1.7rem;
+}
+
+.content {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.content .text {
+  color: lightgrey;
+  text-align: start;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border: 2px solid grey;
+  border-radius: 1rem;
+  max-width: 30vw;
+  margin-bottom: 2rem;
+}
+.content .text h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+.content .example {
+  border: 2px solid grey;
+  border-radius: 1rem;
+  margin-top: 6rem;
+}
+.content .example h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: lightgrey;
+  text-align: center;
+}
+.content .example img {
+  width: 16vw;
+  border: 2px solid #262626;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.content .example img:hover {
+  border: 2px solid grey;
+}
+
+@media (max-width: 1200px) {
+  .content .example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content .example h2 {
+    margin: 1rem;
+  }
+  .content .example img {
+    display: block;
+    width: 32vw;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    padding-top: 8rem;
+  }
+
+  .shadow {
+    width: 96%;
+  }
+  .shadow .content {
+    font-size: 3rem;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content .text-container {
+    width: 90%;
+    margin-bottom: -6rem;
+  }
+  .content .text-container .text {
+    max-width: 100vw;
+    width: 100%;
+  }
+  .content .example {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .content .example h2 {
+    margin: 1rem;
+    font-size: 4rem;
+  }
+  .content .example img {
+    display: block;
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=sponsorPage.css.map */
