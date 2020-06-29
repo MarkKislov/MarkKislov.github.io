@@ -68,6 +68,10 @@ body {
   height: 80px;
 }
 
+.shadow-bottom {
+  display: none;
+}
+
 .bold-text {
   color: white;
   text-shadow: 0 0 1px grey;
@@ -141,6 +145,13 @@ body {
   }
   .shadow .content {
     font-size: 3rem;
+  }
+
+  .shadow-bottom {
+    display: block;
+    width: 94vw;
+    margin-bottom: 20px;
+    margin-top: -30px;
   }
 
   .content {
