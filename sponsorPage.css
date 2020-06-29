@@ -148,7 +148,7 @@ body {
     align-items: center;
   }
   .content .text-container {
-    width: 90%;
+    width: 106%;
     margin-bottom: -6rem;
   }
   .content .text-container .text {
@@ -156,11 +156,11 @@ body {
     width: 100%;
   }
   .content .example {
-    width: 90%;
+    width: 106%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   .content .example h2 {
     margin: 1rem;
